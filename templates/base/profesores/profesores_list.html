@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+    {% extends 'base/base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Aprellidos</td>
+                <td>Edad</td>
+                <td>E-mail</td>
+                <td>Materias</td>
+            </tr>
+        </thead>
+    <tbody>
+    {% if object_lista %}
+        {% for  profesores in object_lista %}
+            <tr>
+                <td>{{ profesores_list.nombre }}</td>
+                <td>{{ profesores_list.apellidos }}</td>
+                <td>{{ profesores_list.edad }}</td>
+                <td>{{ profesores_list.email }}</td>
+                <td>{{ profesores_list.materia }}</td>
+            </tr>
+        {% endfor %}
+
+    {% endif %}
+    </tbody>
+    </table>
+{% endblock %}
+
+</body>
+</html>

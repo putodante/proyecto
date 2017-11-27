@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+{% extends 'base/base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table table-bordered">
+        <thead>
+            <tr>
+
+                <td>Nombre</td>
+                <td>Apellidos</td>
+                <td>sexo</td>
+                <td>edad</td>
+                <td>fecha matriculación</td>
+                <td>profesor</td>
+                <td>acciones</td>
+            </tr>
+        </thead>
+    <tbody>
+    {% if object_list %}
+    {% for qalumnos in object_list %}
+    
+
+     <tr>
+
+         <td>{{ qalumnos.nombre}}</td>
+         <td>{{ qalumnos.apellidos }}</td>
+         <td>{{ qalumnos.sexo }}</td>
+
+         <td>{{ qalumnos.edad }}</td>
+         <td>{{ qalumnos.fechaMatricula }}</td>
+         <td>{{ qalumnos.profesor }}</td>
+
+			<td>
+				<a class="btn btn-primary" href="{% url 'alumnos:alumnos_editar' qalumnos.id %}">Editar</a>
+				<a class="btn btn-danger" href="{% url 'alumnos:alumnos_borrar' qalumnos.id %}">Eliminar</a>
+			</td>
+     </tr>
+        {% endfor %}
+        {% else %}
+        <h1>No hay alumnos</h1>
+{% endif %}
+    </tbody>
+</table>
+    <ul class="pager">
+        <li>
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">atrás</a>
+            {% endif %}
+        </li>
+        <li>
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">siguiente</a>
+            {% endif %}
+        </li>
+    </ul>
+{% endblock %}
+</body>
+</html>
