@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-
 {% extends 'base/base.html' %}
 {% block content %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Listado alumnos</title>
 </head>
 <body>
 <table class="table table-bordered">
         <thead>
             <tr>
-
                 <td>Nombre</td>
                 <td>Apellidos</td>
-                <td>sexo</td>
-                <td>edad</td>
-                <td>fecha matriculación</td>
-                <td>profesor</td>
-                <td>acciones</td>
+                <td>Sexo</td>
+                <td>Edad</td>
+                <td>Fecha matriculación</td>
+                <td>Tutor</td>
+                <td>Acciones</td>
             </tr>
         </thead>
     <tbody>
     {% if object_list %}
     {% for qalumnos in object_list %}
-    
 
      <tr>
 
          <td>{{ qalumnos.nombre}}</td>
          <td>{{ qalumnos.apellidos }}</td>
          <td>{{ qalumnos.sexo }}</td>
-
          <td>{{ qalumnos.edad }}</td>
          <td>{{ qalumnos.fechaMatricula }}</td>
          <td>{{ qalumnos.profesor }}</td>

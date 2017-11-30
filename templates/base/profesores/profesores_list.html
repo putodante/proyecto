@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-    {% extends 'base/base.html' %}
+{% extends 'base/base.html' %}
 {% block content %}
 <html lang="en">
 <head>
@@ -13,27 +12,45 @@
         <thead>
             <tr>
                 <td>Nombre</td>
-                <td>Aprellidos</td>
+                <td>Apellidos</td>
                 <td>Edad</td>
                 <td>E-mail</td>
                 <td>Materias</td>
+                <td>Acciones</td>
             </tr>
         </thead>
     <tbody>
-    {% if object_lista %}
-        {% for  profesores in object_lista %}
+    {% if object_list %}
+        {% for  profesores in object_list %}
             <tr>
-                <td>{{ profesores_list.nombre }}</td>
-                <td>{{ profesores_list.apellidos }}</td>
-                <td>{{ profesores_list.edad }}</td>
-                <td>{{ profesores_list.email }}</td>
-                <td>{{ profesores_list.materia }}</td>
+                <td>{{ profesores.nombre }}</td>
+                <td>{{ profesores.apellidos }}</td>
+                <td>{{ profesores.edad }}</td>
+                <td>{{ profesores.email }}</td>
+                <td>{{ profesores.materia }}</td>
+                <td>
+				<a class="btn btn-primary" href="{% url 'profesores:profesores_editar' profesores.id %}">Editar</a>
+				<a class="btn btn-danger" href="{% url 'profesores:profesores_borrar' profesores.id %}">Eliminar</a>
+			</td>
             </tr>
         {% endfor %}
-
+        {% else %}
+        <h1>No hay alumnos</h1>
     {% endif %}
     </tbody>
     </table>
+    <ul class="pager">
+        <li>
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">atrás</a>
+            {% endif %}
+        </li>
+        <li>
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">siguiente</a>
+            {% endif %}
+        </li>
+    </ul>
 {% endblock %}
 
 </body>
