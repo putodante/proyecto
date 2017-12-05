@@ -1,5 +1,6 @@
 from django import forms
 from apps.alumnos.models import Alumnos
+
 class AlumnosForm(forms.ModelForm):
     class Meta:
         model= Alumnos

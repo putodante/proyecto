@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'base/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}{{ object.Titulo }}{% endblock %}
+</head>
+<body>
+{% block content %}
+<div class="container">
+
+  <h1 class="display-3">{{object.Titulo}}</h1>
+    <hr class="my-4">
+
+    <p>{{ object.Cuerpo }}</p>
+</div>
+
+{% endblock %}
+</body>
+</html>

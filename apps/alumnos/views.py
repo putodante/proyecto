@@ -1,9 +1,14 @@
+from django import template
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.template.loader import get_template
+
 from apps.alumnos.forms import AlumnosForm
 from apps.alumnos.models import Alumnos
 from django.views.generic import ListView,CreateView,UpdateView,DeleteView
 from django.core.urlresolvers import reverse_lazy
+from django.http import HttpResponse
+from django.views.generic import View
 
 # Create your views here.
 
@@ -57,3 +62,4 @@ class AlumnoBorrar(DeleteView):
     model = Alumnos
     template_name = 'base/alumnos/Alumno_borrar.html'
     success_url = reverse_lazy('alumnos:alumnos_listar')
+

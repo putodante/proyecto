@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.profesores',
     'apps.materias',
     'apps.usuarios',
+    'apps.noticias',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL=reverse_lazy('alumnos:alumnos_listar')
 LOGOUT_REDIRECT_URL=reverse_lazy('login')
