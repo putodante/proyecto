@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85f45c44-88f3-4ebc-a6f6-e139a30cce3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/noticias/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/noticias/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base/noticias/crear.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base/noticias/detalle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base/noticias/index.html" />
+    <list default="true" id="85f45c44-88f3-4ebc-a6f6-e139a30cce3e" name="Default" comment="q ruiowjp">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/alumnos/forms.py" afterPath="$PROJECT_DIR$/apps/alumnos/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/alumnos/urls.py" afterPath="$PROJECT_DIR$/apps/alumnos/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/alumnos/views.py" afterPath="$PROJECT_DIR$/apps/alumnos/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto/settings.py" afterPath="$PROJECT_DIR$/proyecto/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto/urls.py" afterPath="$PROJECT_DIR$/proyecto/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/alumnos/alumnos_list.html" afterPath="$PROJECT_DIR$/templates/base/alumnos/alumnos_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/base.html" afterPath="$PROJECT_DIR$/templates/base/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/apps/noticias/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -69,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/proyecto/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -442,6 +429,14 @@
       <option name="presentableId" value="Default" />
       <updated>1510304380694</updated>
     </task>
+    <task id="LOCAL-00001" summary="q ruiowjp">
+      <created>1512477390959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512477390959</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -458,7 +453,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31230283" sideWeight="0.5161054" order="7" side_tool="true" content_ui="tabs" x="0" y="265" width="1366" height="198" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31096563" sideWeight="0.4838946" order="2" side_tool="false" content_ui="tabs" x="0" y="265" width="1366" height="198" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33387887" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -501,8 +496,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="q ruiowjp" />
+    <option name="LAST_COMMIT_MESSAGE" value="q ruiowjp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,7 +853,7 @@
     <entry file="file://$PROJECT_DIR$/apps/noticias/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -864,7 +889,7 @@
     <entry file="file://$PROJECT_DIR$/proyecto/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
