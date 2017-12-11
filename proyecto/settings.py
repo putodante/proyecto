@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD':'zafiro2468',
+        'PASSWORD':'usuario123',
         'HOST':'localhost',
         'PORT':5432,
 
@@ -143,6 +143,6 @@ LOGOUT_REDIRECT_URL=reverse_lazy('login')
 EMAIL_USE_TLS = True
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=25
-EMAIL_HOST_USER='rubicarlo.95@gmail.com'
-EMAIL_HOST_PASSWORD='rubiales1995'
+EMAIL_HOST_USER='proyectoasircarlos@gmail.com'
+EMAIL_HOST_PASSWORD='usuario123'
 EMAIL_BACKED='django.core.mail.backends.smtp.EmailBackend'
